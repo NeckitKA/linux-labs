@@ -1,0 +1,11 @@
+[Unit]
+Description=Заклинатель нигг
+
+[Service]
+User=nick
+Restart=on-failure 
+WorkingDirectory=/home/nick/demons/4/4.4/
+ExecStart=/home/nick/demons/4/main
+
+[Install]
+WantedBy=multi-user.target

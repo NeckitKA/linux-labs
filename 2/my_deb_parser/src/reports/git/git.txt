@@ -17,9 +17,14 @@ Recommends: ca-certificates, patch, less, ssh-client
 Suggests: gettext-base, git-daemon-run | git-daemon-sysvinit, git-doc, git-email, git-gui, gitk, gitweb, git-cvs, git-mediawiki, git-svn
 Breaks: bash-completion (<< 1:1.90-1), cogito (<= 0.18.2+), dgit (<< 5.1~), git-buildpackage (<< 0.6.5), git-el (<< 1:2.32.0~rc2-1~), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), guilt (<< 0.33), openssh-client (<< 1:6.8), stgit (<< 0.15), stgit-contrib (<< 0.15)
 Homepage: https://git-scm.com/
+Tag: devel::lang:perl, devel::library, devel::rcs, implemented-in::c,
+ implemented-in::perl, implemented-in::shell, interface::text-mode,
+ network::client, network::server, protocol::ssh, protocol::tcp,
+ role::devel-lib, role::program, works-with::file,
+ works-with::software:source, works-with::vcs
 Download-Size: 7 256 kB
 APT-Manual-Installed: yes
-APT-Sources: http://security.debian.org/debian-security bookworm-security/updates/main amd64 Packages
+APT-Sources: http://deb.debian.org/debian bookworm/main amd64 Packages
 Description: масштабируемая распределённая система контроля версий
  Git — это популярная система контроля версий, предназначенная для быстрой и
  эффективной работы над очень большими проектами; используется многими
@@ -40,4 +45,4 @@ Description: масштабируемая распределённая сист�
  доступны в отдельных пакетах git*.
 Bugs: https://bugs.launchpad.net/ubuntu/+filebug
 APT-Manual-Installed: 
-APT-Sources: http://security.debian.org/debian-security bookworm-security/updates/main amd64 Packages
+APT-Sources: http://deb.debian.org/debian bookworm/main amd64 Packages

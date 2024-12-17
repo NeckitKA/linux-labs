@@ -50,7 +50,7 @@ void log_change(const std::string &file_path, const std::string &action, const s
 }
 
 int main() {
-    const std::string watch_folder = "/home/nick/demons/1/dimon/";  // Укажите путь к папке, которую хотите мониторить
+    const std::string watch_folder = "/home/nick/labs/demons/1/dimon/";  // Укажите путь к папке, которую хотите мониторить
 
     // Создание inotify дескриптора
     int fd = inotify_init();

@@ -80,7 +80,7 @@ void monitorFile(const std::string &filePath, const std::string &tool) {
 }
 
 int main() {
-    std::string filePath = "/home/nick/demons/2/1.txt";
+    std::string filePath = "/home/nick/labs/demons/2/1.txt";
     std::string tool = "cowsay";
 
     std::cout << "Начат мониторинг " << filePath << " с использованием " << tool << "..." << std::endl;

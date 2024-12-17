@@ -47,7 +47,7 @@ std::string readFile(const std::string &filePath) {
 }
 
 void logToFile(const std::string &message) {
-    std::ofstream logFile("/home/nick/demons/3/mydemon.log", std::ios_base::app);
+    std::ofstream logFile("/home/nick/labs/demons/3/mydemon.log", std::ios_base::app);
     if (logFile.is_open()) {
         logFile << message << std::endl;
     } else {
@@ -91,7 +91,7 @@ void monitorFile(const std::string &filePath, const std::string &tool) {
                     std::string result = runCommand(command);
 
                     std::string timestamp = getCurrentTime();
-                    std::string logMessage = timestamp + " /home/nick/demons/3/1.txt: изменился файл";
+                    std::string logMessage = timestamp + " /home/nick/labs/demons/3/1.txt: изменился файл";
 
                     // Выводим результат в stdout (для systemd)
                     std::cout << logMessage << std::endl;
@@ -112,7 +112,7 @@ void monitorFile(const std::string &filePath, const std::string &tool) {
 int main() {
     openlog("mydaemon", LOG_PID | LOG_CONS, LOG_DAEMON);
 
-    std::string filePath = "/home/nick/demons/3/1.txt";
+    std::string filePath = "/home/nick/labs/demons/3/1.txt";
     std::string tool = "/usr/games/cowsay";
 
     std::cout << "Начинаю мониторинг файла " << filePath << " с использованием утилиты " << tool << "..." << std::endl;
